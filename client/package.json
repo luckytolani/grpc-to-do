@@ -7,10 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/index.js",
-    "dev": "NODE_ENV=dev nodemon --delay 500ms ./src/index.js ",
-    "local": "NODE_ENV=local nodemon --delay 500ms ./src/index.js",
-    "grpc": "NODE_ENV=dev nodemon --delay 500ms ./src/grpc_server.js ",
-    "client": "NODE_ENV=dev nodemon --delay 500ms ./src/grcp_client.js "
+    "dev": "NODE_ENV=dev nodemon --delay 500ms ./src/index.js "
   },
   "keywords": [],
   "author": "",
