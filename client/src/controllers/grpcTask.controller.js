@@ -1,6 +1,6 @@
-import { client } from "../sync.js";
+import { client } from "../client/client.js";
 
-export const createTask = async (req, res, next) => {
+export const createTask = async (req, res, _next) => {
   try {
     let taskObj = req.body;
 

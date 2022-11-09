@@ -1,5 +1,6 @@
 import grpc from "@grpc/grpc-js";
 import protoLoader from "@grpc/proto-loader";
+import { environment } from "../config.js";
 import * as taskService from "./services/grpcTask.service.js";
 import "./db/connection.js";
 
@@ -28,10 +29,13 @@ let main = function () {
   });
 
   server.bindAsync(
-    "0.0.0.0:50052",
+    environment.GRPC_ADD,
     grpc.ServerCredentials.createInsecure(),
     (error, port) => {
-      console.log(`listening on port ${port}`);
+      console.log(
+        `server is running in port ${port}`,
+        `\nEnvironment ==  ${environment.NODE_ENV}`
+      );
       server.start();
     }
   );

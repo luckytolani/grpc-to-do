@@ -11,6 +11,7 @@ const environment = {
   NODE_ENV: process.env.NODE_ENV || "dev",
   PORT: process.env.PORT || 5000,
   MONGO: process.env.MONGO,
+  GRPC_ADD: process.env.GRPC_ADD,
 };
 
 export { environment };
