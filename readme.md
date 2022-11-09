@@ -1,12 +1,19 @@
 ## Steps to run this project
 
 **step:1** clone the repo
+
 **step:2** run command `cd ./client`
+
 **step:3** run command `docker build -t client-app:1.0 .`
+
 **step:4** go back to root directory `cd ..`
+
 **step:5** run command `cd ./server`
+
 **step:6** run command `docker build -t server-app:1.0 .`
+
 **step:7** go back to root directory `cd ..`
+
 **step:8** run command to start this project `docker-compose -f mongo.yaml up `
 
 ### Server started at the address
