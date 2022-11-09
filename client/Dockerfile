@@ -1,6 +1,6 @@
 FROM node:14
 
-WORKDIR /TASK-APP
+WORKDIR /CLIENT
 
 COPY package.json .
 

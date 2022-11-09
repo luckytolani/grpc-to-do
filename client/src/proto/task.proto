@@ -2,19 +2,9 @@ syntax = "proto3";
 
 message Empty {}
 
-message Dog {
-    string name = 1;
-    int32 age = 2;
-}
-
 message Task {
     string _id = 1;
     string label = 2;
-    string description = 3;
-    string time = 4;
-    string date = 5;
-    string createdAt = 6;
-    string updatedAt = 7;
 }
 
 message SuccessRes {

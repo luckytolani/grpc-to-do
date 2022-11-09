@@ -14,9 +14,6 @@ export const grpcCreateTask = (input, callback) => {
   try {
     const tempTask = {
       label: input?.request?.label,
-      description: input?.request?.description,
-      time: input?.request?.time,
-      date: input?.request?.date,
     };
     const task = new Task({
       ...tempTask,
